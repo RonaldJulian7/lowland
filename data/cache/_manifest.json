@@ -1,0 +1,126 @@
+{
+  "energy_charts_power_nl_2015-01-01_2026-09-24": {
+    "fetched_at": "2026-09-24T18:16:48+00:00",
+    "index_end": "2026-09-24 16:15:00+00:00",
+    "index_start": "2015-01-01 00:00:00+00:00",
+    "key": "energy_charts_power_nl_2015-01-01_2026-09-24",
+    "n_cols": 14,
+    "n_rows": 385053,
+    "params": {
+      "country": "nl",
+      "end": "2026-09-24",
+      "start": "2015-01-01"
+    },
+    "params_hash": "edbd5fae2ae8",
+    "path": "data\\cache\\energy_charts_power_nl_2015-01-01_2026-09-24.parquet",
+    "source": "CC BY 4.0 - energy-charts.info (Fraunhofer ISE), derived from ENTSO-E"
+  },
+  "energy_charts_power_nl_2026-08-01_2026-09-24": {
+    "fetched_at": "2026-09-24T17:17:22+00:00",
+    "index_end": "2026-09-24 15:00:00+00:00",
+    "index_start": "2026-07-31 22:00:00+00:00",
+    "key": "energy_charts_power_nl_2026-08-01_2026-09-24",
+    "n_cols": 14,
+    "n_rows": 5253,
+    "params": {
+      "country": "nl",
+      "end": "2026-09-24",
+      "start": "2026-08-01"
+    },
+    "params_hash": "3834c94aaf0a",
+    "path": "data\\cache\\energy_charts_power_nl_2026-08-01_2026-09-24.parquet",
+    "source": "CC BY 4.0 - energy-charts.info (Fraunhofer ISE), derived from ENTSO-E"
+  },
+  "energy_charts_price_nl_2015-01-01_2026-09-24": {
+    "fetched_at": "2026-09-24T18:29:08+00:00",
+    "index_end": "2026-09-24 21:45:00+00:00",
+    "index_start": "2015-01-01 00:00:00+00:00",
+    "key": "energy_charts_price_nl_2015-01-01_2026-09-24",
+    "n_cols": 1,
+    "n_rows": 128686,
+    "params": {
+      "bzn": "NL",
+      "end": "2026-09-24",
+      "start": "2015-01-01"
+    },
+    "params_hash": "5e5d5721fd80",
+    "path": "data\\cache\\energy_charts_price_nl_2015-01-01_2026-09-24.parquet",
+    "source": "CC BY 4.0 - energy-charts.info (Fraunhofer ISE), derived from ENTSO-E"
+  },
+  "energy_charts_price_nl_2026-08-01_2026-09-24": {
+    "fetched_at": "2026-09-24T17:17:23+00:00",
+    "index_end": "2026-09-24 21:45:00+00:00",
+    "index_start": "2026-07-31 22:00:00+00:00",
+    "key": "energy_charts_price_nl_2026-08-01_2026-09-24",
+    "n_cols": 1,
+    "n_rows": 5280,
+    "params": {
+      "bzn": "NL",
+      "end": "2026-09-24",
+      "start": "2026-08-01"
+    },
+    "params_hash": "9048fea0bed1",
+    "path": "data\\cache\\energy_charts_price_nl_2026-08-01_2026-09-24.parquet",
+    "source": "CC BY 4.0 - energy-charts.info (Fraunhofer ISE), derived from ENTSO-E"
+  },
+  "open_meteo_archive_2015-01-01_2026-09-18": {
+    "fetched_at": "2026-09-24T18:31:19+00:00",
+    "index_end": "2026-09-18 23:00:00+00:00",
+    "index_start": "2015-01-01 00:00:00+00:00",
+    "key": "open_meteo_archive_2015-01-01_2026-09-18",
+    "n_cols": 140,
+    "n_rows": 102696,
+    "params": {
+      "end": "2026-09-18",
+      "start": "2015-01-01"
+    },
+    "params_hash": "a61a27cc7248",
+    "path": "data\\cache\\open_meteo_archive_2015-01-01_2026-09-18.parquet",
+    "source": "CC BY 4.0 - Open-Meteo.com (ERA5 reanalysis / operational NWP)"
+  },
+  "open_meteo_archive_2026-08-01_2026-09-18": {
+    "fetched_at": "2026-09-24T17:17:24+00:00",
+    "index_end": "2026-09-18 23:00:00+00:00",
+    "index_start": "2026-08-01 00:00:00+00:00",
+    "key": "open_meteo_archive_2026-08-01_2026-09-18",
+    "n_cols": 140,
+    "n_rows": 1176,
+    "params": {
+      "end": "2026-09-18",
+      "start": "2026-08-01"
+    },
+    "params_hash": "d274e3708c7f",
+    "path": "data\\cache\\open_meteo_archive_2026-08-01_2026-09-18.parquet",
+    "source": "CC BY 4.0 - Open-Meteo.com (ERA5 reanalysis / operational NWP)"
+  },
+  "open_meteo_forecast_2026-09-24": {
+    "fetched_at": "2026-09-24T18:31:21+00:00",
+    "index_end": "2026-10-09 23:00:00+00:00",
+    "index_start": "2026-06-24 00:00:00+00:00",
+    "key": "open_meteo_forecast_2026-09-24",
+    "n_cols": 140,
+    "n_rows": 2592,
+    "params": {
+      "as_of": "2026-09-24",
+      "past_days": 92
+    },
+    "params_hash": "212a9f5c463f",
+    "path": "data\\cache\\open_meteo_forecast_2026-09-24.parquet",
+    "source": "CC BY 4.0 - Open-Meteo.com (ERA5 reanalysis / operational NWP)"
+  },
+  "panel_hourly": {
+    "fetched_at": "2026-09-24T21:35:08+00:00",
+    "index_end": "2026-10-09 23:00:00+00:00",
+    "index_start": "2015-01-01 00:00:00+00:00",
+    "key": "panel_hourly",
+    "n_cols": 37,
+    "n_rows": 103200,
+    "params": {
+      "cols": 37,
+      "rows": 103200
+    },
+    "params_hash": "1b6d26f3f53b",
+    "path": "data\\cache\\panel_hourly.parquet",
+    "source": "derived: energy-charts (ENTSO-E) + Open-Meteo"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "model_source": "Ensemble",
+  "battery": {
+    "power_mw": 25.0,
+    "energy_mwh": 50.0,
+    "round_trip_efficiency": 0.9025
+  },
+  "window": {
+    "hours": 2880,
+    "start": "2026-04-30 00:00:00+00:00",
+    "end": "2026-08-27 23:00:00+00:00"
+  },
+  "controllers": {
+    "PerfectForesight": {
+      "profit_eur": 903060.48,
+      "pct_of_optimum": 100.0,
+      "eur_per_mw_year": 109872.36,
+      "cycles": 154.72,
+      "energy_discharged_mwh": 7736.0,
+      "worst_day_eur": -963.07,
+      "cvar5_daily_eur": 1333.15,
+      "stress_charged_mwh": 1698.76,
+      "stress_relieved_mwh": 1980.32,
+      "net_grid_contribution_mwh": 281.56,
+      "solve_seconds": 2.58
+    },
+    "Threshold": {
+      "profit_eur": 390540.24,
+      "pct_of_optimum": 43.25,
+      "eur_per_mw_year": 47515.73,
+      "cycles": 89.14,
+      "energy_discharged_mwh": 4457.25,
+      "worst_day_eur": -7017.24,
+      "cvar5_daily_eur": -4288.37,
+      "stress_charged_mwh": 1153.53,
+      "stress_relieved_mwh": 1323.99,
+      "net_grid_contribution_mwh": 170.46,
+      "solve_seconds": 0.0
+    },
+    "DeterministicMPC": {
+      "profit_eur": 855791.33,
+      "pct_of_optimum": 94.77,
+      "eur_per_mw_year": 104121.28,
+      "cycles": 174.35,
+      "energy_discharged_mwh": 8717.69,
+      "worst_day_eur": -479.27,
+      "cvar5_daily_eur": 1496.19,
+      "stress_charged_mwh": 1659.69,
+      "stress_relieved_mwh": 2101.03,
+      "net_grid_contribution_mwh": 441.34,
+      "solve_seconds": 14.28
+    },
+    "StochasticMPC": {
+      "profit_eur": 863248.58,
+      "pct_of_optimum": 95.59,
+      "eur_per_mw_year": 105028.58,
+      "cycles": 147.5,
+      "energy_discharged_mwh": 7374.94,
+      "worst_day_eur": 1687.39,
+      "cvar5_daily_eur": 2031.53,
+      "stress_charged_mwh": 1676.75,
+      "stress_relieved_mwh": 1962.76,
+      "net_grid_contribution_mwh": 286.01,
+      "solve_seconds": 39.95
+    },
+    "PPO": {
+      "profit_eur": 777124.25,
+      "pct_of_optimum": 86.05,
+      "eur_per_mw_year": 94582.96,
+      "cycles": 103.46,
+      "energy_discharged_mwh": 5172.93,
+      "worst_day_eur": -23.09,
+      "cvar5_daily_eur": 1276.78,
+      "stress_charged_mwh": 1595.49,
+      "stress_relieved_mwh": 1626.39,
+      "net_grid_contribution_mwh": 30.9,
+      "solve_seconds": 0.0
+    }
+  },
+  "rl": {
+    "n_parameters": 22403,
+    "n_updates": 70,
+    "train_hours": 35040,
+    "surrogate_sd_eur": 36.7,
+    "surrogate_rho": 0.852,
+    "final_ep_return": 24.189331145821384,
+    "device": "cuda"
+  },
+  "scenario_correlation": {
+    "rho": 0.8517654052929661,
+    "seasonal_weight": 0.2321542864455928
+  },
+  "scenario_marginal_check_mae": 1.2999906898454923,
+  "mean_daily_spread_eur": 193.79771477496786
+}

@@ -1,0 +1,372 @@
+{
+  "target": "residual_load",
+  "horizon": 24,
+  "best_by_crps": "Ensemble",
+  "metrics": {
+    "Climatology": {
+      "n": 2880.0,
+      "mae": 1278.568,
+      "rmse": 1615.8131,
+      "smape": 12.2157,
+      "pinball": 376.0569,
+      "crps": 871.8737,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8653,
+      "mpiw90": 5397.1365,
+      "winkler90": 7165.3018,
+      "picp80": 0.7865,
+      "mpiw80": 4347.493,
+      "winkler80": 5981.0668,
+      "picp50": 0.5243,
+      "mpiw50": 2364.8468,
+      "winkler50": 4146.9712
+    },
+    "SeasonalNaive": {
+      "n": 2880.0,
+      "mae": 1565.4328,
+      "rmse": 2029.5395,
+      "smape": 15.2245,
+      "pinball": 476.9431,
+      "crps": 1096.6359,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8337,
+      "mpiw90": 5791.6277,
+      "winkler90": 9187.3731,
+      "picp80": 0.6892,
+      "mpiw80": 3837.1876,
+      "winkler80": 7814.8636,
+      "picp50": 0.3323,
+      "mpiw50": 1507.3283,
+      "winkler50": 5260.1203
+    },
+    "QuantileAR": {
+      "n": 2880.0,
+      "mae": 1177.2131,
+      "rmse": 1479.2731,
+      "smape": 11.3412,
+      "pinball": 337.8394,
+      "crps": 791.1852,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.9118,
+      "mpiw90": 5166.3847,
+      "winkler90": 6159.462,
+      "picp80": 0.7944,
+      "mpiw80": 3970.7848,
+      "winkler80": 5291.7565,
+      "picp50": 0.5778,
+      "mpiw50": 2366.525,
+      "winkler50": 3756.4818
+    },
+    "LightGBM": {
+      "n": 2880.0,
+      "mae": 496.4098,
+      "rmse": 642.0253,
+      "smape": 4.8227,
+      "pinball": 158.7581,
+      "crps": 356.6385,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.7944,
+      "mpiw90": 1818.8443,
+      "winkler90": 3297.1309,
+      "picp80": 0.5667,
+      "mpiw80": 1080.3995,
+      "winkler80": 2750.2364,
+      "picp50": 0.3035,
+      "mpiw50": 496.2209,
+      "winkler50": 1692.8853
+    },
+    "LightGBM-NoWeather": {
+      "n": 2880.0,
+      "mae": 1118.3731,
+      "rmse": 1406.9415,
+      "smape": 10.7612,
+      "pinball": 319.1711,
+      "crps": 746.632,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8833,
+      "mpiw90": 4415.8472,
+      "winkler90": 5927.3302,
+      "picp80": 0.7778,
+      "mpiw80": 3386.8442,
+      "winkler80": 4961.8769,
+      "picp50": 0.5219,
+      "mpiw50": 2067.8542,
+      "winkler50": 3529.8287
+    },
+    "LightGBM+CQR": {
+      "n": 2880.0,
+      "mae": 496.4098,
+      "rmse": 642.0253,
+      "smape": 4.8227,
+      "pinball": 150.1478,
+      "crps": 343.3662,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.9264,
+      "mpiw90": 2602.3374,
+      "winkler90": 3064.2035,
+      "picp80": 0.826,
+      "mpiw80": 1869.3326,
+      "winkler80": 2412.233,
+      "picp50": 0.5385,
+      "mpiw50": 933.8288,
+      "winkler50": 1633.5858
+    },
+    "LightGBM+Mondrian": {
+      "n": 2880.0,
+      "mae": 496.4098,
+      "rmse": 642.0253,
+      "smape": 4.8227,
+      "pinball": 151.1616,
+      "crps": 344.1116,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.917,
+      "mpiw90": 2565.3409,
+      "winkler90": 3137.433,
+      "picp80": 0.8205,
+      "mpiw80": 1866.7266,
+      "winkler80": 2452.8161,
+      "picp50": 0.5361,
+      "mpiw50": 930.7271,
+      "winkler50": 1631.0921
+    },
+    "DeepTFT": {
+      "n": 2880.0,
+      "mae": 444.5222,
+      "rmse": 595.7462,
+      "smape": 4.2954,
+      "pinball": 133.5211,
+      "crps": 305.9015,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.7983,
+      "mpiw90": 1399.0046,
+      "winkler90": 2741.8271,
+      "picp80": 0.6847,
+      "mpiw80": 1099.1024,
+      "winkler80": 2110.0842,
+      "picp50": 0.3955,
+      "mpiw50": 560.6132,
+      "winkler50": 1457.1469
+    },
+    "DeepTFT+CQR": {
+      "n": 2880.0,
+      "mae": 444.5222,
+      "rmse": 595.7462,
+      "smape": 4.2954,
+      "pinball": 129.6411,
+      "crps": 301.3164,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.9184,
+      "mpiw90": 1939.3162,
+      "winkler90": 2473.9991,
+      "picp80": 0.8309,
+      "mpiw80": 1486.1674,
+      "winkler80": 2030.4973,
+      "picp50": 0.5125,
+      "mpiw50": 759.5097,
+      "winkler50": 1433.9088
+    },
+    "Ensemble": {
+      "n": 2880.0,
+      "mae": 426.4375,
+      "rmse": 567.6015,
+      "smape": 4.1493,
+      "pinball": 128.7565,
+      "crps": 295.2523,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.9503,
+      "mpiw90": 2270.8267,
+      "winkler90": 2602.7695,
+      "picp80": 0.8691,
+      "mpiw80": 1677.75,
+      "winkler80": 2051.9597,
+      "picp50": 0.5729,
+      "mpiw50": 846.6693,
+      "winkler50": 1410.9679
+    }
+  },
+  "dm_head_to_head": {
+    "best": "Ensemble",
+    "runner_up": "DeepTFT+CQR",
+    "dm_stat": -0.4140942587951335,
+    "p_value": 0.6788359242779891
+  },
+  "risk_calibration": {
+    "LightGBM+CQR": {
+      "threshold_mw": 14525.720000000001,
+      "brier": 0.007718190433247911,
+      "brier_skill_vs_climatology": 0.06603409883386613,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2852,
+          "mean_predicted": 0.005223895028227986,
+          "observed_freq": 0.0070126227208976155
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 20,
+          "mean_predicted": 0.13410615775372858,
+          "observed_freq": 0.15
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 8,
+          "mean_predicted": 0.2305565424235444,
+          "observed_freq": 0.125
+        }
+      ]
+    },
+    "LightGBM": {
+      "threshold_mw": 14525.720000000001,
+      "brier": 0.008022832506009367,
+      "brier_skill_vs_climatology": 0.029169848012311816,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2875,
+          "mean_predicted": 0.0031810902696153844,
+          "observed_freq": 0.008
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 5,
+          "mean_predicted": 0.14926588423294335,
+          "observed_freq": 0.2
+        }
+      ]
+    },
+    "DeepTFT+CQR": {
+      "threshold_mw": 14525.720000000001,
+      "brier": 0.00735644116527388,
+      "brier_skill_vs_climatology": 0.10980880016853889,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2846,
+          "mean_predicted": 0.0018045115353967313,
+          "observed_freq": 0.0059732958538299364
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 18,
+          "mean_predicted": 0.15193851784644144,
+          "observed_freq": 0.16666666666666666
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 6,
+          "mean_predicted": 0.23414742626934906,
+          "observed_freq": 0.16666666666666666
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 3,
+          "mean_predicted": 0.31932314840683396,
+          "observed_freq": 0.0
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 2,
+          "mean_predicted": 0.48125106877533735,
+          "observed_freq": 0.5
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 4,
+          "mean_predicted": 0.5673625658390098,
+          "observed_freq": 0.5
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 1,
+          "mean_predicted": 0.616091664438157,
+          "observed_freq": 0.0
+        }
+      ]
+    },
+    "Ensemble": {
+      "threshold_mw": 14525.720000000001,
+      "brier": 0.0072733611885094146,
+      "brier_skill_vs_climatology": 0.11986217550810441,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2853,
+          "mean_predicted": 0.002683086236880545,
+          "observed_freq": 0.006659656501927795
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 20,
+          "mean_predicted": 0.14665741689791623,
+          "observed_freq": 0.05
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 4,
+          "mean_predicted": 0.2141614158995066,
+          "observed_freq": 0.5
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 3,
+          "mean_predicted": 0.3173532936612688,
+          "observed_freq": 0.6666666666666666
+        }
+      ]
+    }
+  },
+  "deep_info": [
+    {
+      "n_parameters": 574853,
+      "epochs_run": 18,
+      "best_valid": 0.06896948752303918,
+      "fit_seconds": 175.8,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 15,
+      "best_valid": 0.06307526150097449,
+      "fit_seconds": 147.3,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 11,
+      "best_valid": 0.06363390944898129,
+      "fit_seconds": 106.7,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 16,
+      "best_valid": 0.05524317019929489,
+      "fit_seconds": 151.1,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    }
+  ],
+  "grouped_importance": {
+    "autoregressive": 0.5033897793625285,
+    "calendar": 0.12954527556474926,
+    "weather_wind": 0.11014376625094449,
+    "seasonality": 0.09574748402764452,
+    "weather_temp": 0.07609650707724519,
+    "weather_solar": 0.06829449402840196,
+    "other": 0.016782693688486065
+  }
+}

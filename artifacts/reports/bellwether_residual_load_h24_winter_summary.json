@@ -1,0 +1,516 @@
+{
+  "target": "residual_load",
+  "horizon": 24,
+  "best_by_crps": "DeepTFT+CQR",
+  "metrics": {
+    "Climatology": {
+      "n": 2880.0,
+      "mae": 1998.7213,
+      "rmse": 2389.5586,
+      "smape": 17.9279,
+      "pinball": 531.7228,
+      "crps": 1290.3248,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8156,
+      "mpiw90": 6437.1848,
+      "winkler90": 8336.3076,
+      "picp80": 0.691,
+      "mpiw80": 5283.3328,
+      "winkler80": 7627.4898,
+      "picp50": 0.3903,
+      "mpiw50": 2923.4832,
+      "winkler50": 6172.5388
+    },
+    "SeasonalNaive": {
+      "n": 2880.0,
+      "mae": 2234.5514,
+      "rmse": 2785.6652,
+      "smape": 19.9913,
+      "pinball": 724.2101,
+      "crps": 1625.3344,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.6517,
+      "mpiw90": 5499.4734,
+      "winkler90": 15160.6418,
+      "picp80": 0.484,
+      "mpiw80": 3653.209,
+      "winkler80": 12443.5127,
+      "picp50": 0.2097,
+      "mpiw50": 1455.675,
+      "winkler50": 7799.2465
+    },
+    "QuantileAR": {
+      "n": 2880.0,
+      "mae": 1718.3817,
+      "rmse": 2055.6172,
+      "smape": 15.4869,
+      "pinball": 463.8024,
+      "crps": 1107.3001,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8958,
+      "mpiw90": 6620.2214,
+      "winkler90": 7889.713,
+      "picp80": 0.8215,
+      "mpiw80": 5655.8355,
+      "winkler80": 6959.7911,
+      "picp50": 0.5031,
+      "mpiw50": 3092.585,
+      "winkler50": 5187.8456
+    },
+    "LightGBM": {
+      "n": 2880.0,
+      "mae": 712.4677,
+      "rmse": 876.9212,
+      "smape": 6.3402,
+      "pinball": 237.6568,
+      "crps": 521.5712,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.6837,
+      "mpiw90": 2470.1929,
+      "winkler90": 5500.825,
+      "picp80": 0.5208,
+      "mpiw80": 1573.4753,
+      "winkler80": 4161.3433,
+      "picp50": 0.2483,
+      "mpiw50": 602.084,
+      "winkler50": 2464.7536
+    },
+    "LightGBM-NoWeather": {
+      "n": 2880.0,
+      "mae": 1715.5561,
+      "rmse": 2081.7057,
+      "smape": 15.4971,
+      "pinball": 479.5044,
+      "crps": 1129.8165,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.7694,
+      "mpiw90": 5226.3465,
+      "winkler90": 8699.4413,
+      "picp80": 0.6372,
+      "mpiw80": 4070.3973,
+      "winkler80": 7316.6766,
+      "picp50": 0.3934,
+      "mpiw50": 2396.6576,
+      "winkler50": 5328.4532
+    },
+    "LightGBM+CQR": {
+      "n": 2880.0,
+      "mae": 712.4677,
+      "rmse": 876.9212,
+      "smape": 6.3402,
+      "pinball": 215.8159,
+      "crps": 492.2401,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.858,
+      "mpiw90": 3392.6456,
+      "winkler90": 4422.7146,
+      "picp80": 0.7372,
+      "mpiw80": 2337.0457,
+      "winkler80": 3513.517,
+      "picp50": 0.3993,
+      "mpiw50": 1000.4596,
+      "winkler50": 2327.9603
+    },
+    "LightGBM+Mondrian": {
+      "n": 2880.0,
+      "mae": 712.4677,
+      "rmse": 876.9212,
+      "smape": 6.3402,
+      "pinball": 215.7499,
+      "crps": 491.8178,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8795,
+      "mpiw90": 3524.8346,
+      "winkler90": 4437.099,
+      "picp80": 0.7576,
+      "mpiw80": 2448.2292,
+      "winkler80": 3512.8071,
+      "picp50": 0.4188,
+      "mpiw50": 1066.1178,
+      "winkler50": 2323.5199
+    },
+    "DeepTFT": {
+      "n": 2856.0,
+      "mae": 604.4805,
+      "rmse": 766.3268,
+      "smape": 5.5193,
+      "pinball": 189.847,
+      "crps": 425.2429,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.6761,
+      "mpiw90": 1586.6862,
+      "winkler90": 4243.666,
+      "picp80": 0.5683,
+      "mpiw80": 1233.1124,
+      "winkler80": 3114.427,
+      "picp50": 0.3127,
+      "mpiw50": 633.3113,
+      "winkler50": 2012.2507
+    },
+    "DeepTFT+CQR": {
+      "n": 2856.0,
+      "mae": 604.4805,
+      "rmse": 766.3268,
+      "smape": 5.5193,
+      "pinball": 177.1129,
+      "crps": 410.4581,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.827,
+      "mpiw90": 2092.7559,
+      "winkler90": 3448.5142,
+      "picp80": 0.7171,
+      "mpiw80": 1634.027,
+      "winkler80": 2766.6555,
+      "picp50": 0.3904,
+      "mpiw50": 812.5847,
+      "winkler50": 1953.8355
+    },
+    "Ensemble": {
+      "n": 2880.0,
+      "mae": 621.9754,
+      "rmse": 760.7529,
+      "smape": 5.5882,
+      "pinball": 180.053,
+      "crps": 419.5381,
+      "crossing_rate": 0.0,
+      "mase": 0.0,
+      "picp90": 0.8892,
+      "mpiw90": 2748.6104,
+      "winkler90": 3405.7257,
+      "picp80": 0.7573,
+      "mpiw80": 1990.145,
+      "winkler80": 2805.4476,
+      "picp50": 0.4139,
+      "mpiw50": 907.3257,
+      "winkler50": 1994.2093
+    }
+  },
+  "dm_head_to_head": {
+    "best": "DeepTFT+CQR",
+    "runner_up": "Ensemble",
+    "dm_stat": -0.5638911517092305,
+    "p_value": 0.5728725020121921
+  },
+  "risk_calibration": {
+    "LightGBM+CQR": {
+      "threshold_mw": 14587.64,
+      "brier": 0.04528405289937395,
+      "brier_skill_vs_climatology": 0.6427850215091625,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2224,
+          "mean_predicted": 0.010038742141510659,
+          "observed_freq": 0.008093525179856115
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 176,
+          "mean_predicted": 0.14947304077683743,
+          "observed_freq": 0.2215909090909091
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 110,
+          "mean_predicted": 0.24020410392977942,
+          "observed_freq": 0.43636363636363634
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 38,
+          "mean_predicted": 0.34694691307911346,
+          "observed_freq": 0.5526315789473685
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 51,
+          "mean_predicted": 0.4521941012373334,
+          "observed_freq": 0.8235294117647058
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 55,
+          "mean_predicted": 0.5444817803707042,
+          "observed_freq": 0.8181818181818182
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 46,
+          "mean_predicted": 0.6514770153347209,
+          "observed_freq": 0.8260869565217391
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 56,
+          "mean_predicted": 0.76231268738413,
+          "observed_freq": 0.9642857142857143
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 60,
+          "mean_predicted": 0.844543512307416,
+          "observed_freq": 1.0
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 64,
+          "mean_predicted": 0.9257548749486202,
+          "observed_freq": 1.0
+        }
+      ]
+    },
+    "LightGBM": {
+      "threshold_mw": 14587.64,
+      "brier": 0.04843961336712448,
+      "brier_skill_vs_climatology": 0.6178929592390553,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2345,
+          "mean_predicted": 0.007509200579757043,
+          "observed_freq": 0.021321961620469083
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 138,
+          "mean_predicted": 0.15063473237037245,
+          "observed_freq": 0.3333333333333333
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 58,
+          "mean_predicted": 0.23626268181852314,
+          "observed_freq": 0.46551724137931033
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 28,
+          "mean_predicted": 0.35254252464209374,
+          "observed_freq": 0.75
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 30,
+          "mean_predicted": 0.454081545728789,
+          "observed_freq": 0.8
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 39,
+          "mean_predicted": 0.5473421881693885,
+          "observed_freq": 0.8461538461538461
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 26,
+          "mean_predicted": 0.6519478608614302,
+          "observed_freq": 0.7307692307692307
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 53,
+          "mean_predicted": 0.7573053867997587,
+          "observed_freq": 0.9056603773584906
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 58,
+          "mean_predicted": 0.8487681080209684,
+          "observed_freq": 1.0
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 105,
+          "mean_predicted": 0.9332596211397012,
+          "observed_freq": 0.9809523809523809
+        }
+      ]
+    },
+    "DeepTFT+CQR": {
+      "threshold_mw": 14587.64,
+      "brier": 0.03083744009476511,
+      "brier_skill_vs_climatology": 0.7584162843911071,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2333,
+          "mean_predicted": 0.003440080239501206,
+          "observed_freq": 0.008572653236176597
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 67,
+          "mean_predicted": 0.15396909823461966,
+          "observed_freq": 0.23880597014925373
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 48,
+          "mean_predicted": 0.2507702969989658,
+          "observed_freq": 0.5416666666666666
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 37,
+          "mean_predicted": 0.34601228195810946,
+          "observed_freq": 0.5945945945945946
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 31,
+          "mean_predicted": 0.44188455104281177,
+          "observed_freq": 0.7419354838709677
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 35,
+          "mean_predicted": 0.5483306462880053,
+          "observed_freq": 0.8285714285714286
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 28,
+          "mean_predicted": 0.6434412633131543,
+          "observed_freq": 0.8571428571428571
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 39,
+          "mean_predicted": 0.7604636259602181,
+          "observed_freq": 0.8974358974358975
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 47,
+          "mean_predicted": 0.8521498828625971,
+          "observed_freq": 0.9361702127659575
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 191,
+          "mean_predicted": 0.9798459790555047,
+          "observed_freq": 0.9947643979057592
+        }
+      ]
+    },
+    "Ensemble": {
+      "threshold_mw": 14587.64,
+      "brier": 0.034749366410101803,
+      "brier_skill_vs_climatology": 0.7258859713299567,
+      "bins": [
+        {
+          "bin": "0.0-0.1",
+          "n": 2303,
+          "mean_predicted": 0.006333146999553582,
+          "observed_freq": 0.006513243595310464
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 111,
+          "mean_predicted": 0.14934547590704855,
+          "observed_freq": 0.2072072072072072
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 71,
+          "mean_predicted": 0.23221671734643007,
+          "observed_freq": 0.4788732394366197
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 43,
+          "mean_predicted": 0.34599090034243396,
+          "observed_freq": 0.5813953488372093
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 38,
+          "mean_predicted": 0.45302297111715034,
+          "observed_freq": 0.7631578947368421
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 50,
+          "mean_predicted": 0.5479694902951799,
+          "observed_freq": 0.94
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 32,
+          "mean_predicted": 0.6497742764100269,
+          "observed_freq": 0.84375
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 54,
+          "mean_predicted": 0.7525605625938547,
+          "observed_freq": 0.9444444444444444
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 51,
+          "mean_predicted": 0.8479356157725108,
+          "observed_freq": 1.0
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 127,
+          "mean_predicted": 0.9412811813485428,
+          "observed_freq": 1.0
+        }
+      ]
+    }
+  },
+  "deep_info": [
+    {
+      "n_parameters": 574853,
+      "epochs_run": 14,
+      "best_valid": 0.05832282546907663,
+      "fit_seconds": 130.1,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 12,
+      "best_valid": 0.05745393503457308,
+      "fit_seconds": 109.6,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 23,
+      "best_valid": 0.06565460469573736,
+      "fit_seconds": 210.5,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    },
+    {
+      "n_parameters": 574853,
+      "epochs_run": 15,
+      "best_valid": 0.0767035096262892,
+      "fit_seconds": 141.5,
+      "n_train_windows": 20436,
+      "device": "cuda"
+    }
+  ],
+  "grouped_importance": {
+    "autoregressive": 0.5097836644565273,
+    "calendar": 0.12405457158778739,
+    "weather_wind": 0.10628666593285835,
+    "seasonality": 0.09519962948822844,
+    "weather_temp": 0.07800375174743683,
+    "weather_solar": 0.06914022830935332,
+    "other": 0.01753148847780836
+  }
+}

@@ -1,0 +1,12 @@
+# Normalise line endings so the repo is identical on Windows, macOS and Linux.
+# Without this, git warns on every commit made from Windows and diffs can show
+# whole files as changed when only the line endings differ.
+* text=auto eol=lf
+
+# Binary data - never touch these.
+*.parquet binary
+*.pt       binary
+*.joblib   binary
+*.png      binary
+*.jpg      binary
+*.pdf      binary

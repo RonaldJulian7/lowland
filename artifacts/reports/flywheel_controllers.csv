@@ -1,0 +1,6 @@
+controller,profit_eur,pct_of_optimum,eur_per_mw_year,cycles,energy_discharged_mwh,worst_day_eur,cvar5_daily_eur,stress_charged_mwh,stress_relieved_mwh,net_grid_contribution_mwh,solve_seconds
+PerfectForesight,903060.48,100.0,109872.36,154.72,7736.0,-963.07,1333.15,1698.76,1980.32,281.56,2.58
+Threshold,390540.24,43.25,47515.73,89.14,4457.25,-7017.24,-4288.37,1153.53,1323.99,170.46,0.0
+DeterministicMPC,855791.33,94.77,104121.28,174.35,8717.69,-479.27,1496.19,1659.69,2101.03,441.34,14.28
+StochasticMPC,863248.58,95.59,105028.58,147.5,7374.94,1687.39,2031.53,1676.75,1962.76,286.01,39.95
+PPO,777124.25,86.05,94582.96,103.46,5172.93,-23.09,1276.78,1595.49,1626.39,30.9,0.0

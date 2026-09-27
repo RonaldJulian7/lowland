@@ -1,0 +1,554 @@
+{
+  "merit_order": {
+    "table": [
+      {
+        "method": "OLS (naive)",
+        "eur_per_mwh_per_gw": -11.979,
+        "std_error": 0.503,
+        "t": -23.81,
+        "p_value": 0.0,
+        "ci_low": -12.965,
+        "ci_high": -10.993,
+        "n": 102073,
+        "r2": 0.802,
+        "first_stage_F": NaN,
+        "n_instruments": NaN,
+        "sargan_stat": NaN,
+        "sargan_p": NaN,
+        "hac_lags": NaN,
+        "n_folds": NaN,
+        "first_stage_partial_corr": NaN
+      },
+      {
+        "method": "IV-2SLS (weather instruments)",
+        "eur_per_mwh_per_gw": -13.335,
+        "std_error": 0.552,
+        "t": -24.15,
+        "p_value": 0.0,
+        "ci_low": -14.417,
+        "ci_high": -12.253,
+        "n": 102073,
+        "r2": NaN,
+        "first_stage_F": 18313.032,
+        "n_instruments": 8.0,
+        "sargan_stat": 4858.545,
+        "sargan_p": 0.0,
+        "hac_lags": 48.0,
+        "n_folds": NaN,
+        "first_stage_partial_corr": NaN
+      },
+      {
+        "method": "DML-PLIV (cross-fitted)",
+        "eur_per_mwh_per_gw": -16.745,
+        "std_error": 0.731,
+        "t": -22.92,
+        "p_value": 0.0,
+        "ci_low": -18.177,
+        "ci_high": -15.313,
+        "n": 102073,
+        "r2": NaN,
+        "first_stage_F": NaN,
+        "n_instruments": NaN,
+        "sargan_stat": NaN,
+        "sargan_p": NaN,
+        "hac_lags": NaN,
+        "n_folds": 5.0,
+        "first_stage_partial_corr": 0.751
+      }
+    ],
+    "context": {
+      "n_hours": 102073,
+      "sample_start": "2015-01-04 23:00:00+00:00",
+      "sample_end": "2026-08-27 23:00:00+00:00",
+      "mean_price_eur_mwh": 78.08457788053649,
+      "mean_vre_gw": 1.3708216955022388,
+      "ols_iv_gap": 1.356,
+      "first_stage_F": 18313.032036622448
+    }
+  },
+  "heterogeneity_year": [
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -15.084,
+      "std_error": 1.696,
+      "t": -8.89,
+      "p_value": 0.0,
+      "ci_low": -18.408,
+      "ci_high": -11.759,
+      "n": 8664,
+      "first_stage_F": 6547.535,
+      "n_instruments": 8,
+      "sargan_stat": 120.143,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2015
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -11.917,
+      "std_error": 1.08,
+      "t": -11.03,
+      "p_value": 0.0,
+      "ci_low": -14.035,
+      "ci_high": -9.8,
+      "n": 8784,
+      "first_stage_F": 8307.031,
+      "n_instruments": 8,
+      "sargan_stat": 157.912,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2016
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -9.859,
+      "std_error": 0.828,
+      "t": -11.91,
+      "p_value": 0.0,
+      "ci_low": -11.481,
+      "ci_high": -8.236,
+      "n": 8760,
+      "first_stage_F": 4864.505,
+      "n_instruments": 8,
+      "sargan_stat": 265.955,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2017
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -7.333,
+      "std_error": 0.653,
+      "t": -11.23,
+      "p_value": 0.0,
+      "ci_low": -8.612,
+      "ci_high": -6.053,
+      "n": 8760,
+      "first_stage_F": 6312.841,
+      "n_instruments": 8,
+      "sargan_stat": 61.351,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2018
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -5.661,
+      "std_error": 0.475,
+      "t": -11.93,
+      "p_value": 0.0,
+      "ci_low": -6.592,
+      "ci_high": -4.731,
+      "n": 8760,
+      "first_stage_F": 9098.245,
+      "n_instruments": 8,
+      "sargan_stat": 231.62,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2019
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -6.524,
+      "std_error": 0.378,
+      "t": -17.24,
+      "p_value": 0.0,
+      "ci_low": -7.266,
+      "ci_high": -5.783,
+      "n": 8784,
+      "first_stage_F": 11804.782,
+      "n_instruments": 8,
+      "sargan_stat": 54.456,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2020
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -16.813,
+      "std_error": 1.745,
+      "t": -9.63,
+      "p_value": 0.0,
+      "ci_low": -20.234,
+      "ci_high": -13.393,
+      "n": 8760,
+      "first_stage_F": 11987.41,
+      "n_instruments": 8,
+      "sargan_stat": 209.1,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2021
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -34.66,
+      "std_error": 2.961,
+      "t": -11.71,
+      "p_value": 0.0,
+      "ci_low": -40.463,
+      "ci_high": -28.858,
+      "n": 8760,
+      "first_stage_F": 10647.12,
+      "n_instruments": 8,
+      "sargan_stat": 308.859,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2022
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -13.383,
+      "std_error": 0.703,
+      "t": -19.03,
+      "p_value": 0.0,
+      "ci_low": -14.761,
+      "ci_high": -12.005,
+      "n": 8760,
+      "first_stage_F": 10058.281,
+      "n_instruments": 8,
+      "sargan_stat": 1791.105,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2023
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -12.011,
+      "std_error": 0.887,
+      "t": -13.54,
+      "p_value": 0.0,
+      "ci_low": -13.75,
+      "ci_high": -10.272,
+      "n": 8784,
+      "first_stage_F": 11216.208,
+      "n_instruments": 8,
+      "sargan_stat": 1439.634,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2024
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -10.691,
+      "std_error": 0.602,
+      "t": -17.76,
+      "p_value": 0.0,
+      "ci_low": -11.87,
+      "ci_high": -9.511,
+      "n": 8760,
+      "first_stage_F": 10672.322,
+      "n_instruments": 8,
+      "sargan_stat": 2441.868,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2025
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -10.968,
+      "std_error": 0.878,
+      "t": -12.49,
+      "p_value": 0.0,
+      "ci_low": -12.69,
+      "ci_high": -9.247,
+      "n": 5737,
+      "first_stage_F": 6408.082,
+      "n_instruments": 8,
+      "sargan_stat": 1589.49,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "year": 2026
+    }
+  ],
+  "heterogeneity_peak": [
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -12.103,
+      "std_error": 0.611,
+      "t": -19.8,
+      "p_value": 0.0,
+      "ci_low": -13.302,
+      "ci_high": -10.905,
+      "n": 46784,
+      "first_stage_F": 6788.104,
+      "n_instruments": 8,
+      "sargan_stat": 937.282,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "peak": "off-peak"
+    },
+    {
+      "method": "IV-2SLS (weather instruments)",
+      "eur_per_mwh_per_gw": -14.868,
+      "std_error": 0.774,
+      "t": -19.2,
+      "p_value": 0.0,
+      "ci_low": -16.385,
+      "ci_high": -13.35,
+      "n": 55289,
+      "first_stage_F": 10392.658,
+      "n_instruments": 8,
+      "sargan_stat": 1821.883,
+      "sargan_p": 0.0,
+      "hac_lags": 48,
+      "peak": "peak"
+    }
+  ],
+  "regimes": {
+    "n_states": 5,
+    "summary": {
+      "0": {
+        "n_days": 1278,
+        "mean_price": 34.82,
+        "mean_volatility": 6.47,
+        "mean_spread": 22.27,
+        "mean_negative_hours": 0.0,
+        "first_day": "2015-01-06",
+        "last_day": "2021-03-07",
+        "expected_duration_days": 5.5
+      },
+      "1": {
+        "n_days": 973,
+        "mean_price": 47.88,
+        "mean_volatility": 10.93,
+        "mean_spread": 38.8,
+        "mean_negative_hours": 0.0,
+        "first_day": "2015-01-05",
+        "last_day": "2025-12-24",
+        "expected_duration_days": 3.6
+      },
+      "2": {
+        "n_days": 422,
+        "mean_price": 60.12,
+        "mean_volatility": 51.01,
+        "mean_spread": 160.92,
+        "mean_negative_hours": 4.64,
+        "first_day": "2019-06-02",
+        "last_day": "2026-08-25",
+        "expected_duration_days": 2.2
+      },
+      "3": {
+        "n_days": 1031,
+        "mean_price": 94.79,
+        "mean_volatility": 24.4,
+        "mean_spread": 86.68,
+        "mean_negative_hours": 0.0,
+        "first_day": "2015-11-23",
+        "last_day": "2026-08-21",
+        "expected_duration_days": 4.9
+      },
+      "4": {
+        "n_days": 549,
+        "mean_price": 214.6,
+        "mean_volatility": 58.92,
+        "mean_spread": 205.26,
+        "mean_negative_hours": 0.0,
+        "first_day": "2021-09-22",
+        "last_day": "2026-08-27",
+        "expected_duration_days": 6.7
+      }
+    },
+    "transition_matrix": [
+      [
+        0.8195,
+        0.1688,
+        0.0109,
+        0.0008,
+        0.0
+      ],
+      [
+        0.2177,
+        0.7235,
+        0.0092,
+        0.0495,
+        0.0
+      ],
+      [
+        0.0321,
+        0.0189,
+        0.5483,
+        0.2727,
+        0.128
+      ],
+      [
+        0.0029,
+        0.045,
+        0.1283,
+        0.7975,
+        0.0262
+      ],
+      [
+        0.0,
+        0.0,
+        0.0734,
+        0.0754,
+        0.8511
+      ]
+    ]
+  },
+  "generative": {
+    "n_parameters": 102577,
+    "n_days": 4241,
+    "evaluation": [
+      {
+        "statistic": "mean",
+        "real": 94.088,
+        "generated": 94.098,
+        "abs_error": 0.009,
+        "rel_error_pct": 0.0
+      },
+      {
+        "statistic": "sd",
+        "real": 56.393,
+        "generated": 40.324,
+        "abs_error": 16.069,
+        "rel_error_pct": 28.5
+      },
+      {
+        "statistic": "p05",
+        "real": -0.1,
+        "generated": 31.496,
+        "abs_error": 31.595,
+        "rel_error_pct": 31714.4
+      },
+      {
+        "statistic": "p50",
+        "real": 96.599,
+        "generated": 92.661,
+        "abs_error": 3.937,
+        "rel_error_pct": 4.1
+      },
+      {
+        "statistic": "p95",
+        "real": 170.0,
+        "generated": 158.535,
+        "abs_error": 11.465,
+        "rel_error_pct": 6.7
+      },
+      {
+        "statistic": "mean_daily_spread",
+        "real": 132.799,
+        "generated": 77.214,
+        "abs_error": 55.584,
+        "rel_error_pct": 41.9
+      },
+      {
+        "statistic": "p90_daily_spread",
+        "real": 204.276,
+        "generated": 112.366,
+        "abs_error": 91.91,
+        "rel_error_pct": 45.0
+      },
+      {
+        "statistic": "negative_hour_share",
+        "real": 0.06,
+        "generated": 0.01,
+        "abs_error": 0.05,
+        "rel_error_pct": 82.9
+      },
+      {
+        "statistic": "within_day_lag1_acf",
+        "real": 0.86,
+        "generated": 0.777,
+        "abs_error": 0.083,
+        "rel_error_pct": 9.6
+      }
+    ]
+  },
+  "scenarios": {
+    "Base (observed)": {
+      "mean_price_eur_mwh": 83.7657069773,
+      "median_price_eur_mwh": 88.8679570806,
+      "observed_mean_price_eur_mwh": 87.1365122847,
+      "negative_price_hours": 607,
+      "negative_price_share": 0.0260727632,
+      "hours": 23281,
+      "mean_daily_spread_eur": 95.037452713,
+      "vre_share_of_load": 0.1963364681,
+      "curtailed_twh_per_year": 0.0,
+      "curtailment_rate": 0.0,
+      "wind_capture_rate": 0.9125014336,
+      "wind_capture_price_eur_mwh": 76.4363277044,
+      "residual_load_p95_mw": 14722.475,
+      "co2_mt_per_year": 22.8103699496,
+      "extrapolation_share": 4.29535e-05
+    },
+    "2030 offshore push": {
+      "mean_price_eur_mwh": 75.7472634834,
+      "median_price_eur_mwh": 75.1243333551,
+      "observed_mean_price_eur_mwh": 87.1365122847,
+      "negative_price_hours": 692,
+      "negative_price_share": 0.0297238091,
+      "hours": 23281,
+      "mean_daily_spread_eur": 100.0378388692,
+      "vre_share_of_load": 0.3545027053,
+      "curtailed_twh_per_year": 0.2371550577,
+      "curtailment_rate": 0.0050855627,
+      "wind_capture_rate": 0.7096778585,
+      "wind_capture_price_eur_mwh": 53.7561557335,
+      "residual_load_p95_mw": 16162.1340759902,
+      "co2_mt_per_year": 20.6246880419,
+      "extrapolation_share": 0.1093166101
+    },
+    "2035 high renewables": {
+      "mean_price_eur_mwh": 78.1390421245,
+      "median_price_eur_mwh": 75.1272269096,
+      "observed_mean_price_eur_mwh": 87.1365122847,
+      "negative_price_hours": 1037,
+      "negative_price_share": 0.0445427602,
+      "hours": 23281,
+      "mean_daily_spread_eur": 110.8863565283,
+      "vre_share_of_load": 0.4355232585,
+      "curtailed_twh_per_year": 2.0751376755,
+      "curtailment_rate": 0.0307651371,
+      "wind_capture_rate": 0.6336132478,
+      "wind_capture_price_eur_mwh": 49.5099322629,
+      "residual_load_p95_mw": 18968.3238654618,
+      "co2_mt_per_year": 20.9354787996,
+      "extrapolation_share": 0.2408831236
+    },
+    "2030 slow build": {
+      "mean_price_eur_mwh": 89.285681968,
+      "median_price_eur_mwh": 91.2772149769,
+      "observed_mean_price_eur_mwh": 87.1365122847,
+      "negative_price_hours": 210,
+      "negative_price_share": 0.0090202311,
+      "hours": 23281,
+      "mean_daily_spread_eur": 98.5222282802,
+      "vre_share_of_load": 0.2511925304,
+      "curtailed_twh_per_year": 0.0,
+      "curtailment_rate": 0.0,
+      "wind_capture_rate": 0.8330700362,
+      "wind_capture_price_eur_mwh": 74.381226313,
+      "residual_load_p95_mw": 16747.7968801542,
+      "co2_mt_per_year": 23.8744312656,
+      "extrapolation_share": 0.0198874619
+    }
+  },
+  "causal_cross_check": {
+    "2030 offshore push": {
+      "delta_vre_gw": 2.6035220482367594,
+      "linear_causal_delta_eur": -34.71796651323719,
+      "structural_model_delta_eur": -24.347582131444653,
+      "divergence_eur": 10.370384381792533,
+      "agreement_ratio": 0.7012963193613734,
+      "neutral_mean_price": 59.418124845878495
+    },
+    "2035 high renewables": {
+      "delta_vre_gw": 4.075070149048581,
+      "linear_causal_delta_eur": -54.34106043756283,
+      "structural_model_delta_eur": -37.19799420252701,
+      "divergence_eur": 17.143066235035818,
+      "agreement_ratio": 0.6845283088515915,
+      "neutral_mean_price": 46.567712774796135
+    },
+    "2030 slow build": {
+      "delta_vre_gw": 1.1412801808341568,
+      "linear_causal_delta_eur": -15.218971211423483,
+      "structural_model_delta_eur": -11.686973545443522,
+      "divergence_eur": 3.5319976659799615,
+      "agreement_ratio": 0.7679213912088344,
+      "neutral_mean_price": 72.07873343187963
+    }
+  }
+}

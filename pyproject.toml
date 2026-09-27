@@ -1,0 +1,39 @@
+[project]
+name = "lowland"
+version = "0.1.0"
+description = "Probabilistic forecasting, decision optimisation and causal scenario analysis for the Dutch power system"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "scipy",
+    "scikit-learn",
+    "statsmodels",
+    "lightgbm",
+    "torch",
+    "httpx",
+    "tenacity",
+    "plotly",
+    "streamlit",
+    "rich",
+    "typer",
+    "joblib",
+    "pulp",
+    "networkx",
+    "matplotlib",
+    "pydantic",
+    "python-dateutil",
+    "holidays",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lowland"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
