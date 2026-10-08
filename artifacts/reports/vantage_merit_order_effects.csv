@@ -1,0 +1,4 @@
+method,eur_per_mwh_per_gw,std_error,t,p_value,ci_low,ci_high,n,r2,first_stage_F,n_instruments,sargan_stat,sargan_p,hac_lags,n_folds,first_stage_partial_corr
+OLS (naive),-11.979,0.503,-23.81,0.0,-12.965,-10.993,102073,0.802,,,,,,,
+IV-2SLS (weather instruments),-13.335,0.552,-24.15,0.0,-14.417,-12.253,102073,,18313.032,8.0,4858.545,0.0,48.0,,
+DML-PLIV (cross-fitted),-16.745,0.731,-22.92,0.0,-18.177,-15.313,102073,,,,,,,5.0,0.751

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Large raw payloads are reproducible from the APIs; cached parquet is kept.
+data/raw/
+artifacts/models/*.pt
+artifacts/models/*.txt
+artifacts/models/*.joblib
+*.log
+logs/
+.claude/
